@@ -1,0 +1,2 @@
+C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\lint-baseline.xml: Information: 367 warnings were filtered out because they are listed in the baseline file, lint-baseline.xml [LintBaseline]
+0 errors, 0 warnings (367 warnings filtered by baseline lint-baseline.xml)

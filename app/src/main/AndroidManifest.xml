@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.sagar.vehicledocumentverification"> <!-- 1. Corrected package name -->
+    <!-- Add this line -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- autofocus is generally available if camera is, but explicit declaration is fine -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!--
+        Regarding storage permissions:
+        For Android 10 (API 29) and above, consider Scoped Storage.
+        requestLegacyExternalStorage="true" might be needed in <application> tag for temporary migration
+        if targeting API 29. For API 30+, use MediaStore or Storage Access Framework.
+    -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+                     android:maxSdkVersion="28" /> <!-- Scope this for older Android versions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+                     android:maxSdkVersion="32" /> <!-- Scope if primarily using MediaStore for Android 13+ -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+            android:allowBackup="true"
+            android:requestLegacyExternalStorage="true"
+            android:icon="@drawable/scan"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/scan"
+            android:supportsRtl="true"
+            android:usesCleartextTraffic="true"
+            android:theme="@style/AppTheme"
+            tools:targetApi="31">
+        <!--
+            Note on android:usesCleartextTraffic="true":
+            Be cautious with this setting as it allows unencrypted HTTP traffic.
+            Prefer HTTPS for all network communications for better security.
+        -->
+
+        <activity android:name=".Missing_bike_details"
+                  android:label="MISSING BIKE"
+                  android:exported="false" /> <!-- 2. Added exported="false" -->
+
+        <activity android:name=".Missing_bike"
+                  android:label="MISSING BIKE INFORMATION"
+                  android:exported="false" /> <!-- 2. Added exported="false" -->
+
+        <activity
+                android:name=".Vehicle_information"
+                android:label="INFORMATION"
+                android:exported="false" /> <!-- 2. Added exported="false" -->
+
+        <activity
+                android:name=".Scan_code"
+                android:label="SCAN QR"
+                android:exported="false" /> <!-- 2. Added exported="false" -->
+
+        <activity
+                android:name=".Flash_page"
+                android:theme="@style/Theme.AppCompat.NoActionBar"
+                android:exported="true"> <!-- **3. CRITICAL FIX: Added android:exported="true" for LAUNCHER activity** -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name=".About_app"
+                android:label="ABOUT APP"
+                android:exported="false" /> <!-- 2. Added exported="false" -->
+
+        <activity
+                android:name=".Create_account"
+                android:label="CREATE NEW ACCOUNT"
+                android:exported="false" /> <!-- 2. Added exported="false" -->
+
+        <activity
+                android:name=".Login_page"
+                android:label="LOGIN"
+                android:exported="false" /> <!-- 2. Added exported="false" -->
+
+        <activity
+                android:name=".MainActivity"
+                android:label="HOME"
+                android:exported="false" /> <!-- 2. Added exported="false" -->
+
+        <meta-data
+                android:name="com.google.android.gms.vision.DEPENDENCIES"
+                android:value="barcode" />
+
+        <!-- 4. Updated to AndroidX FileProvider -->
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="${applicationId}.provider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <!-- The authorities attribute uses a placeholder that Gradle replaces -->
+            <!-- The exported attribute is false, meaning other apps cannot access this provider directly -->
+            <!-- grantUriPermissions is true to allow granting temporary access to URIs -->
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/provider_paths" />
+            <!-- This meta-data points to an XML resource file (provider_paths.xml) -->
+            <!-- that defines the paths this provider can share -->
+        </provider>
+
+        <activity android:name=".Feedback"
+                  android:label="FEEDBACK"
+                  android:exported="false" /> <!-- 2. Added exported="false" -->
+
+        <activity android:name=".Add_penalty"
+                  android:label="ADD PENALTY"
+                  android:exported="false" /> <!-- 2. Added exported="false" -->
+
+        <activity android:name=".PrintfinalBillActivity"
+                  android:label="Print Bill"
+                  android:exported="false" /> <!-- 2. Added exported="false" -->
+
+    </application>
+
+</manifest>

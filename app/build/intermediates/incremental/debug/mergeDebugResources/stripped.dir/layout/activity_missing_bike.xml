@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/tv_ttta"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Missing Details"
+                />
+
+
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/tv_ttta"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Enter Vehicle Number"
+                android:id="@+id/et_missing_vehicle"
+
+                />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/et_missing_vehicle"
+                android:text="SEARCH"
+                android:layout_margin="10dp"
+                android:id="@+id/btn_missing_vehicle_submit"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimaryDark"
+                />
+
+
+
+
+            <RelativeLayout
+                android:background="@drawable/scan"
+                android:layout_below="@id/btn_missing_vehicle_submit"
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

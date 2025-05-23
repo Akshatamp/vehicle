@@ -1,0 +1,4001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.4.0" type="baseline" client="gradle" dependencies="false" name="AGP (8.4.0)" variant="all" version="8.4.0">
+
+    <issue
+        id="ScrollViewSize"
+        message="This RelativeLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="            android:layout_height=&quot;match_parent&quot;>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="20"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This RelativeLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="            android:layout_height=&quot;match_parent&quot;>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This RelativeLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="            android:layout_height=&quot;match_parent&quot;>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike.xml"
+            line="19"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This RelativeLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="    android:layout_height=&quot;match_parent&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="17"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This RelativeLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="        android:layout_height=&quot;match_parent&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="16"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="            android:layout_height=&quot;match_parent&quot;>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SimpleDateFormat"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates."
+        errorLine1="        SimpleDateFormat formatter = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="267"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="SimpleDateFormat"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates."
+        errorLine1="        SimpleDateFormat formatter_dr = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="280"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0"
+        errorLine1="    implementation &apos;androidx.appcompat:appcompat:1.6.1&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="56"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1"
+        errorLine1="    implementation &apos;androidx.constraintlayout:constraintlayout:2.1.4&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="57"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0"
+        errorLine1="    implementation &apos;com.google.android.material:material:1.11.0&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="58"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.core:core-ktx than 1.9.0 is available: 1.16.0"
+        errorLine1="    implementation &apos;androidx.core:core-ktx:1.9.0&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="61"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"
+        errorLine1="    androidTestImplementation &apos;androidx.test.ext:junit:1.1.5&apos;"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="67"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test:runner than 1.5.2 is available: 1.6.2"
+        errorLine1="    androidTestImplementation &apos;androidx.test:runner:1.5.2&apos;"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="68"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"
+        errorLine1="    androidTestImplementation &apos;androidx.test.espresso:espresso-core:3.5.1&apos;"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="69"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="29"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;16dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="39"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;16dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="61"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;16dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="85"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;16dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="108"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="        android:textSize=&quot;19dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_flash_page.xml"
+            line="19"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="    android:textSize=&quot;20dp&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_login_page.xml"
+            line="17"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike.xml"
+            line="28"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="43"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="84"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="121"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="150"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="184"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="220"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="253"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="286"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="323"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="37"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="76"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="112"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="141"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="175"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="211"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="244"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="277"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="314"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="349"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;20dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="383"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="416"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="457"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="493"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="522"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="556"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="592"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="625"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="658"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="695"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="730"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="764"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="799"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="840"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="876"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="905"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="939"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="975"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1008"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1041"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1078"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1115"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1156"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1192"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1221"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1255"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1291"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1324"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1357"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1394"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                android:textSize=&quot;20dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="30"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="$GRADLE_USER_HOME/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="$GRADLE_USER_HOME/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="$GRADLE_USER_HOME/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15to18/1.72/32faf4d74dbc333fb3a7a6c80c30417cf888fc7a/bcpkix-jdk15to18-1.72.jar"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `#ffffff` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+        errorLine1="    android:background=&quot;#ffffff&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@drawable/scan` with a theme that also paints a background (inferred theme is `@style/Theme_AppCompat_NoActionBar`)"
+        errorLine1="    android:background=&quot;@drawable/scan&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_flash_page.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `#ffffff` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+        errorLine1="    android:background=&quot;#ffffff&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_login_page.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@drawable/scan` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+        errorLine1="    android:background=&quot;@drawable/scan&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `#ffffff` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+        errorLine1="    android:background=&quot;#ffffff&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `#ffffff` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+        errorLine1="    android:background=&quot;#ffffff&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="9"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.mipmap.ic_launcher` appears to be unused">
+        <location
+            file="src/main/res/mipmap-hdpi/ic_launcher.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_launcher_background` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_launcher_background.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_launcher_foreground` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable-v24/ic_launcher_foreground.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.mipmap.ic_launcher_round` appears to be unused">
+        <location
+            file="src/main/res/mipmap-hdpi/ic_launcher_round.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.prompt_email` appears to be unused"
+        errorLine1="    &lt;string name=&quot;prompt_email&quot;>Email&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="6"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.prompt_password` appears to be unused"
+        errorLine1="    &lt;string name=&quot;prompt_password&quot;>Password&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="7"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.login` appears to be unused"
+        errorLine1="    &lt;string name=&quot;login&quot;>Log In&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.create_new` appears to be unused"
+        errorLine1="    &lt;string name=&quot;create_new&quot;>Click here for register&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.not_register` appears to be unused"
+        errorLine1="    &lt;string name=&quot;not_register&quot;>Not Register?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="10"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.name` appears to be unused"
+        errorLine1="    &lt;string name=&quot;name&quot;>Name&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="11"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.phone_number` appears to be unused"
+        errorLine1="    &lt;string name=&quot;phone_number&quot;>Phone Number&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="12"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.register` appears to be unused"
+        errorLine1="    &lt;string name=&quot;register&quot;>Register&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="13"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_invalid_password` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_invalid_password&quot;>Please enter a minimum password of 6 characters&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="19"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `ScrollView` layout or its `RelativeLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view"
+        errorLine1="    &lt;ScrollView"
+        errorLine2="     ~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="12"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `ScrollView` layout or its `RelativeLayout` parent is unnecessary"
+        errorLine1="    &lt;ScrollView"
+        errorLine2="     ~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="11"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `ScrollView` layout or its `RelativeLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view"
+        errorLine1="    &lt;ScrollView"
+        errorLine2="     ~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike.xml"
+            line="11"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `ScrollView` layout or its `RelativeLayout` parent is unnecessary"
+        errorLine1="&lt;ScrollView"
+        errorLine2=" ~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="10"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `ScrollView` layout or its `RelativeLayout` parent is unnecessary"
+        errorLine1="&lt;ScrollView"
+        errorLine2=" ~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="10"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `ScrollView` layout or its `LinearLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view"
+        errorLine1="    &lt;ScrollView"
+        errorLine2="     ~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="12"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="22"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="23"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="26"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="64"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="101"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="132"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="164"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="200"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="233"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="266"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="303"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="20"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="56"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="92"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="123"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="155"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="191"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="224"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="257"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="294"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="329"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="363"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="397"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="437"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="473"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="504"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="536"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="572"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="605"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="638"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="675"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="710"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="744"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="780"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="820"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="856"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="887"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="919"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="955"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="988"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1021"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1058"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1096"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1136"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1172"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1203"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1235"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1271"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1304"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1337"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="            xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1374"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="TooManyViews"
+        message="`activity_vehicle_information.xml` has more than 80 views, bad for performance"
+        errorLine1="        &lt;androidx.cardview.widget.CardView"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1336"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:android; already declared on the root element"
+        errorLine1="        xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="22"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace declaration xmlns:app; already declared on the root element"
+        errorLine1="        xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="23"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="IconLauncherShape"
+        message="Launcher icon used as round icon did not have a circular shape">
+        <location
+            file="src/main/res/drawable/scan.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/feedback.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/feedback.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/missing.jpg` in densityless folder">
+        <location
+            file="src/main/res/drawable/missing.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/scan.jpg` in densityless folder">
+        <location
+            file="src/main/res/drawable/scan.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/scanme.jpg` in densityless folder">
+        <location
+            file="src/main/res/drawable/scanme.jpg"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="&lt;EditText"
+        errorLine2=" ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="38"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="44"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="67"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="113"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike.xml"
+            line="37"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="39"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="72"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="83"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="&lt;EditText"
+        errorLine2=" ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="38"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="49"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="61"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="75"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="44"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="67"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="89"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="113"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_login_page.xml"
+            line="24"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_login_page.xml"
+            line="38"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike.xml"
+            line="37"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="39"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="50"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="61"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="72"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="            &lt;EditText"
+        errorLine2="             ~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="83"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="49"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="97"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="147"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Empty `android:hint` attribute"
+        errorLine1="                android:hint=&quot;&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="49"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Empty `android:hint` attribute"
+        errorLine1="                android:hint=&quot;&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="73"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Empty `android:hint` attribute"
+        errorLine1="                android:hint=&quot;&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="95"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView1i.setText(&quot;Vehicle No : &quot;+productList.get(0).getv_no());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="89"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView1i.setText(&quot;Vehicle No : &quot;+productList.get(0).getv_no());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="89"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView2i.setText(&quot;Owner Name : &quot;+productList.get(0).geto_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="90"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView2i.setText(&quot;Owner Name : &quot;+productList.get(0).geto_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="90"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView3i.setText(&quot;Address : &quot;+productList.get(0).getaddress());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="91"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView3i.setText(&quot;Address : &quot;+productList.get(0).getaddress());"
+        errorLine2="                                       ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="91"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView4i.setText(&quot;Vehicle Type : &quot;+productList.get(0).getv_type());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="92"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView4i.setText(&quot;Vehicle Type : &quot;+productList.get(0).getv_type());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="92"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView5i.setText(&quot;Vehicle Name : &quot;+productList.get(0).getv_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="93"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView5i.setText(&quot;Vehicle Name : &quot;+productList.get(0).getv_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="93"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView6i.setText(&quot;Complaint Date : &quot;+productList.get(0).getcomplete_date());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="94"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView6i.setText(&quot;Complaint Date : &quot;+productList.get(0).getcomplete_date());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="94"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView7i.setText(&quot;Details : &quot;+productList.get(0).getdesc_details());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="95"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView7i.setText(&quot;Details : &quot;+productList.get(0).getdesc_details());"
+        errorLine2="                                       ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="95"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView8i.setText(&quot;Police Station : &quot;+productList.get(0).getcomplete_station());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="96"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView8i.setText(&quot;Police Station : &quot;+productList.get(0).getcomplete_station());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Missing_bike_details.java"
+            line="96"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                                btnAction.setText(&quot;VIEW DETAILS&quot;);"
+        errorLine2="                                                  ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Scan_code.java"
+            line="150"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                                btnAction.setText(&quot;VIEW DETAILS&quot;);"
+        errorLine2="                                                  ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Scan_code.java"
+            line="153"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView1.setText(&quot;Vehicle No : &quot;+productList1.get(0).getv_no());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="337"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView1.setText(&quot;Vehicle No : &quot;+productList1.get(0).getv_no());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="337"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView2.setText(&quot;Owner Name : &quot;+productList1.get(0).geto_name());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="338"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView2.setText(&quot;Owner Name : &quot;+productList1.get(0).geto_name());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="338"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView3.setText(&quot;Vehicle Name : &quot;+productList1.get(0).getv_name());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="339"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView3.setText(&quot;Vehicle Name : &quot;+productList1.get(0).getv_name());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="339"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView4.setText(&quot;Mobile No : &quot;+productList1.get(0).getmno());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="340"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView4.setText(&quot;Mobile No : &quot;+productList1.get(0).getmno());"
+        errorLine2="                                      ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="340"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView5.setText(&quot;Address  : &quot;+productList1.get(0).getaddress());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="341"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView5.setText(&quot;Address  : &quot;+productList1.get(0).getaddress());"
+        errorLine2="                                      ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="341"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView6.setText(&quot;Date of Birth : &quot;+productList1.get(0).getdob());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="342"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView6.setText(&quot;Date of Birth : &quot;+productList1.get(0).getdob());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="342"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView7.setText(&quot;Validate UpTo : &quot;+productList1.get(0).getvalidate_till());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="343"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView7.setText(&quot;Validate UpTo : &quot;+productList1.get(0).getvalidate_till());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="343"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView8.setText(&quot;Blood Group : &quot;+productList1.get(0).getblood_group());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="344"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView8.setText(&quot;Blood Group : &quot;+productList1.get(0).getblood_group());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="344"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView9.setText(&quot;Date of Issued : &quot;+productList1.get(0).getdoi());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="345"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView9.setText(&quot;Date of Issued : &quot;+productList1.get(0).getdoi());"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="345"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView10.setText(&quot;Vehicle Type : &quot;+productList1.get(0).getd_type());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="346"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView10.setText(&quot;Vehicle Type : &quot;+productList1.get(0).getd_type());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="346"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView1d.setText(&quot;Vehicle No : &quot;+productList2.get(0).getv_no());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="389"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView1d.setText(&quot;Vehicle No : &quot;+productList2.get(0).getv_no());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="389"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView2d.setText(&quot;Registration Date : &quot;+productList2.get(0).getregister_date());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="390"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView2d.setText(&quot;Registration Date : &quot;+productList2.get(0).getregister_date());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="390"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView3d.setText(&quot;Vehicle Name : &quot;+productList2.get(0).getv_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="391"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView3d.setText(&quot;Vehicle Name : &quot;+productList2.get(0).getv_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="391"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView4d.setText(&quot;Vehicle Type : &quot;+productList2.get(0).getv_type());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="392"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView4d.setText(&quot;Vehicle Type : &quot;+productList2.get(0).getv_type());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="392"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView5d.setText(&quot;Owner Name  : &quot;+productList2.get(0).geto_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="393"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView5d.setText(&quot;Owner Name  : &quot;+productList2.get(0).geto_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="393"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView6d.setText(&quot;Address : &quot;+productList2.get(0).getaddress());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="394"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView6d.setText(&quot;Address : &quot;+productList2.get(0).getaddress());"
+        errorLine2="                                       ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="394"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView7d.setText(&quot;Flue : &quot;+productList2.get(0).getfuel());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="395"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView7d.setText(&quot;Flue : &quot;+productList2.get(0).getfuel());"
+        errorLine2="                                       ~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="395"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView8d.setText(&quot;Manufacture Date : &quot;+productList2.get(0).getmanu_facture());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="396"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView8d.setText(&quot;Manufacture Date : &quot;+productList2.get(0).getmanu_facture());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="396"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView9d.setText(&quot;Validate Upto : &quot;+productList2.get(0).getvalidate_upto());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="397"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView9d.setText(&quot;Validate Upto : &quot;+productList2.get(0).getvalidate_upto());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="397"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView10d.setText(&quot;Seating No : &quot;+productList2.get(0).getseating_no());"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="398"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView10d.setText(&quot;Seating No : &quot;+productList2.get(0).getseating_no());"
+        errorLine2="                                        ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="398"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView1i.setText(&quot;Vehicle No : &quot;+productList3.get(0).getv_no());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="439"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView1i.setText(&quot;Vehicle No : &quot;+productList3.get(0).getv_no());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="439"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView2i.setText(&quot;Owner Name : &quot;+productList3.get(0).geto_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="440"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView2i.setText(&quot;Owner Name : &quot;+productList3.get(0).geto_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="440"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView3i.setText(&quot;vehicle Type : &quot;+productList3.get(0).getv_type());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="441"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView3i.setText(&quot;vehicle Type : &quot;+productList3.get(0).getv_type());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="441"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView4i.setText(&quot;Vehicle Price : &quot;+productList3.get(0).getv_price());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="442"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView4i.setText(&quot;Vehicle Price : &quot;+productList3.get(0).getv_price());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="442"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView5i.setText(&quot;Insurence Date : &quot;+productList3.get(0).getinsurence_date());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="443"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView5i.setText(&quot;Insurence Date : &quot;+productList3.get(0).getinsurence_date());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="443"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView6i.setText(&quot;Validate Upto : &quot;+productList3.get(0).getvalid_upto());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="444"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView6i.setText(&quot;Validate Upto : &quot;+productList3.get(0).getvalid_upto());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="444"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView7i.setText(&quot;Insurence Amount : &quot;+productList3.get(0).getinsurence_amount());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="445"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView7i.setText(&quot;Insurence Amount : &quot;+productList3.get(0).getinsurence_amount());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="445"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView8i.setText(&quot;Address : &quot;+productList3.get(0).getaddress());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="446"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView8i.setText(&quot;Address : &quot;+productList3.get(0).getaddress());"
+        errorLine2="                                       ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="446"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView1e.setText(&quot;Vehicle No : &quot;+productList4.get(0).getv_no());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="491"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView1e.setText(&quot;Vehicle No : &quot;+productList4.get(0).getv_no());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="491"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView2e.setText(&quot;Owner Name : &quot;+productList4.get(0).geto_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="492"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView2e.setText(&quot;Owner Name : &quot;+productList4.get(0).geto_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="492"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView3e.setText(&quot;vehicle Name : &quot;+productList4.get(0).getv_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="493"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView3e.setText(&quot;vehicle Name : &quot;+productList4.get(0).getv_name());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="493"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView4e.setText(&quot;Date : &quot;+productList4.get(0).getemission_test_date());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="494"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView4e.setText(&quot;Date : &quot;+productList4.get(0).getemission_test_date());"
+        errorLine2="                                       ~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="494"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView5e.setText(&quot;Valid Upto : &quot;+productList4.get(0).getemission_valid_upto());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="495"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView5e.setText(&quot;Valid Upto : &quot;+productList4.get(0).getemission_valid_upto());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="495"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView6e.setText(&quot;Vehicle Type : &quot;+productList4.get(0).getv_type());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="496"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView6e.setText(&quot;Vehicle Type : &quot;+productList4.get(0).getv_type());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="496"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView7e.setText(&quot;Vehicle Condition : &quot;+productList4.get(0).getv_condition());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="497"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView7e.setText(&quot;Vehicle Condition : &quot;+productList4.get(0).getv_condition());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="497"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    textView8e.setText(&quot;Carbon Value : &quot;+productList4.get(0).getcarbon_value());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="498"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    textView8e.setText(&quot;Carbon Value : &quot;+productList4.get(0).getcarbon_value());"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/sagar/vehicledocumentverification/Vehicle_information.java"
+            line="498"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;CREATE ACCOUNT&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;CREATE ACCOUNT&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="33"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Name&quot;, should use `@string` resource"
+        errorLine1="    android:hint=&quot;Enter Name&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="43"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Mobile Number&quot;, should use `@string` resource"
+        errorLine1="        android:hint=&quot;Enter Mobile Number&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="52"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Email Address&quot;, should use `@string` resource"
+        errorLine1="        android:hint=&quot;Enter Email Address&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="64"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Password&quot;, should use `@string` resource"
+        errorLine1="        android:hint=&quot;Enter Password&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="78"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;SUBMIT&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;SUBMIT&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_create_account.xml"
+            line="91"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Feedback / Suggestion&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Feedback / Suggestion&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="23"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type Subject&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Type Subject&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="37"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type your Name&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Type your Name&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="59"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type your Phone Number&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Type your Phone Number&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="83"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Type your Feedback / Suggestion&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Type your Feedback / Suggestion&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="106"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Send&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Send&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_feedback.xml"
+            line="131"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;QR  CODE BASED  DOCUMENT VERIFICATION OF VEHICLES&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;QR  CODE BASED  DOCUMENT VERIFICATION OF VEHICLES&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_flash_page.xml"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;LOGIN HERE&quot;, should use `@string` resource"
+        errorLine1="    android:text=&quot;LOGIN HERE&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_login_page.xml"
+            line="15"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Mobile Number&quot;, should use `@string` resource"
+        errorLine1="        android:hint=&quot;Enter Mobile Number&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_login_page.xml"
+            line="28"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Password&quot;, should use `@string` resource"
+        errorLine1="        android:hint=&quot;Enter Password&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_login_page.xml"
+            line="42"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Login&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;Login&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_login_page.xml"
+            line="53"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Create New Account&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;Create New Account&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_login_page.xml"
+            line="66"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;SCAN QR&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;SCAN QR&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="61"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;FEEDBACK&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;FEEDBACK&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="110"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;FEEDBACK&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;FEEDBACK&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="160"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Vehicle Missing Details&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Vehicle Missing Details&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike.xml"
+            line="32"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Vehicle Number&quot;, should use `@string` resource"
+        errorLine1="                android:hint=&quot;Enter Vehicle Number&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike.xml"
+            line="42"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;SEARCH&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;SEARCH&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike.xml"
+            line="54"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;BIKE MISSING INFORMATION&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;BIKE MISSING INFORMATION&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="44"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 1&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 1&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="85"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 2&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 2&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="122"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 3&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 3&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="151"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 4&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 4&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="185"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 5&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 5&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="221"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 6&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 6&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="254"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 7&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 7&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="287"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 8&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 8&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_missing_bike_details.xml"
+            line="324"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;GENERATE BILL AND PRINT&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;GENERATE BILL AND PRINT&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_printfinalbill.xml"
+            line="20"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;PAYMENT VOUCHER&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;PAYMENT VOUCHER&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_printfinalbill.xml"
+            line="35"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;TABLE&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;TABLE&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_printfinalbill.xml"
+            line="41"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;No Barcode Detected&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;No Barcode Detected&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_scan_code.xml"
+            line="21"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VIEW INFORMATION&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;VIEW INFORMATION&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_scan_code.xml"
+            line="31"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;DRIVING  LICIENCE INFORMATION&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;DRIVING  LICIENCE INFORMATION&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="38"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 1&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 1&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="77"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 2&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 2&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="113"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 3&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 3&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="142"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 4&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 4&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="176"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 5&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 5&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="212"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 6&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 6&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="245"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 7&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 7&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="278"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 8&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 8&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="315"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 9&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 9&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="350"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 10&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;VALUE 10&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="384"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VEHICLE DOCUMENTS INFORMATION&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VEHICLE DOCUMENTS INFORMATION&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="417"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 1&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="458"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 2&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 2&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="494"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 3&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 3&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="523"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 4&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="557"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 5&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 5&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 6&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 6&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="626"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 7&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 7&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="659"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 8&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 8&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="696"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 9&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 9&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="731"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 10&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 10&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="765"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;EMISSION TESTING INFORMATION&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;EMISSION TESTING INFORMATION&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="800"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 1&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="841"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 2&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 2&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="877"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 3&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 3&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="906"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 4&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="940"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 5&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 5&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="976"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 6&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 6&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1009"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 7&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 7&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1042"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 8&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 8&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1079"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;INSURANCE INFORMATION&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;INSURANCE INFORMATION&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1116"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 1&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1157"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 2&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 2&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1193"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 3&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 3&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1222"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 4&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1256"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 5&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 5&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1292"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 6&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 6&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1325"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 7&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 7&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1358"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VALUE 8&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;VALUE 8&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1395"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VEHICLE PENALTY NOTICE&quot;, should use `@string` resource"
+        errorLine1="    android:text=&quot;VEHICLE PENALTY NOTICE&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_vehicle_information.xml"
+            line="1409"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;ADD PENALTY FEE&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;ADD PENALTY FEE&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="34"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Penalty Details &quot;, should use `@string` resource"
+        errorLine1="                android:hint=&quot;Penalty Details &quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="44"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Amount&quot;, should use `@string` resource"
+        errorLine1="                android:hint=&quot;Enter Amount&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="53"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Mobile Number&quot;, should use `@string` resource"
+        errorLine1="                android:hint=&quot;Enter Mobile Number&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="64"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter User Name&quot;, should use `@string` resource"
+        errorLine1="                android:hint=&quot;Enter User Name&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="75"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Address&quot;, should use `@string` resource"
+        errorLine1="                android:hint=&quot;Enter Address&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="86"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;SUBMIT&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;SUBMIT&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/add_penalty.xml"
+            line="101"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Redundant attribute `layout_alignParentLeft`; already defining `layout_alignParentStart` with `targetSdkVersion` 34"
+        errorLine1="        android:layout_alignParentLeft=&quot;true&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_scan_code.xml"
+            line="11"
+            column="9"/>
+    </issue>
+
+</issues>

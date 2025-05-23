@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Create_account">
+
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/tv_ttt"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE ACCOUNT"
+                />
+
+
+
+<EditText
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/tv_ttt"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:hint="Enter Name"
+    android:id="@+id/et_create_name"
+
+    />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter Mobile Number"
+        android:id="@+id/et_create_mno"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/et_create_name"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter Email Address"
+        android:id="@+id/et_create_email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/et_create_mno"
+        />
+
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:id="@+id/et_create_password"
+        android:layout_below="@+id/et_create_email"
+        />
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/et_create_password"
+        android:text="SUBMIT"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_create_submit"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        />
+
+
+
+
+        <RelativeLayout
+            android:background="@drawable/scan"
+            android:layout_below="@id/btn_create_submit"
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

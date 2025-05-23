@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sagar.vehicledocumentverification"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="34" /> <!-- 1. Corrected package name -->
+    <!-- Add this line -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- autofocus is generally available if camera is, but explicit declaration is fine -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!--
+        Regarding storage permissions:
+        For Android 10 (API 29) and above, consider Scoped Storage.
+        requestLegacyExternalStorage="true" might be needed in <application> tag for temporary migration
+        if targeting API 29. For API 30+, use MediaStore or Storage Access Framework.
+    -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" /> <!-- Scope this for older Android versions -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" /> <!-- Scope if primarily using MediaStore for Android 13+ -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="com.example.sagar.vehicledocumentverification.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.sagar.vehicledocumentverification.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/scan"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/scan"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+
+        <!--
+            Note on android:usesCleartextTraffic="true":
+            Be cautious with this setting as it allows unencrypted HTTP traffic.
+            Prefer HTTPS for all network communications for better security.
+        -->
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.Missing_bike_details"
+            android:exported="false"
+            android:label="MISSING BIKE" /> <!-- 2. Added exported="false" -->
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.Missing_bike"
+            android:exported="false"
+            android:label="MISSING BIKE INFORMATION" /> <!-- 2. Added exported="false" -->
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.Vehicle_information"
+            android:exported="false"
+            android:label="INFORMATION" /> <!-- 2. Added exported="false" -->
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.Scan_code"
+            android:exported="false"
+            android:label="SCAN QR" /> <!-- 2. Added exported="false" -->
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.Flash_page"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" > <!-- **3. CRITICAL FIX: Added android:exported="true" for LAUNCHER activity** -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.About_app"
+            android:exported="false"
+            android:label="ABOUT APP" /> <!-- 2. Added exported="false" -->
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.Create_account"
+            android:exported="false"
+            android:label="CREATE NEW ACCOUNT" /> <!-- 2. Added exported="false" -->
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.Login_page"
+            android:exported="false"
+            android:label="LOGIN" /> <!-- 2. Added exported="false" -->
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.MainActivity"
+            android:exported="false"
+            android:label="HOME" /> <!-- 2. Added exported="false" -->
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <!-- 4. Updated to AndroidX FileProvider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.sagar.vehicledocumentverification.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+
+            <!-- The authorities attribute uses a placeholder that Gradle replaces -->
+            <!-- The exported attribute is false, meaning other apps cannot access this provider directly -->
+            <!-- grantUriPermissions is true to allow granting temporary access to URIs -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+            <!-- This meta-data points to an XML resource file (provider_paths.xml) -->
+            <!-- that defines the paths this provider can share -->
+        </provider>
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.Feedback"
+            android:exported="false"
+            android:label="FEEDBACK" /> <!-- 2. Added exported="false" -->
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.Add_penalty"
+            android:exported="false"
+            android:label="ADD PENALTY" /> <!-- 2. Added exported="false" -->
+
+        <activity
+            android:name="com.example.sagar.vehicledocumentverification.PrintfinalBillActivity"
+            android:exported="false"
+            android:label="Print Bill" /> <!-- 2. Added exported="false" -->
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.example.sagar.vehicledocumentverification.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

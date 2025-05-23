@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- For app-specific external files dir -->
+    <external-files-path name="my_bills" path="Documents/VehicleVerificationBills/" />
+    <!-- For legacy public external storage (if used on older Android versions) -->
+    <external-path name="legacy_bills" path="VehicleVerificationBills/" />
+</paths>

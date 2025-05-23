@@ -1,0 +1,333 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.sagar.vehicledocumentverification"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" /> <!-- 1. Corrected package name -->
+10    <!-- Add this line -->
+11    <uses-feature
+11-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:6:5-87
+12        android:name="android.hardware.telephony"
+12-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:6:19-60
+13        android:required="false" />
+13-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:6:61-85
+14    <uses-feature
+14-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:8:5-10:39
+15        android:name="android.hardware.camera"
+15-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:9:13-51
+16        android:required="true" />
+16-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:10:13-36
+17
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:12:5-65
+18-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:12:22-62
+19
+20    <!-- autofocus is generally available if camera is, but explicit declaration is fine -->
+21    <uses-feature android:name="android.hardware.camera.autofocus" />
+21-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:15:5-70
+21-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:15:19-67
+22
+23    <!--
+24        Regarding storage permissions:
+25        For Android 10 (API 29) and above, consider Scoped Storage.
+26        requestLegacyExternalStorage="true" might be needed in <application> tag for temporary migration
+27        if targeting API 29. For API 30+, use MediaStore or Storage Access Framework.
+28    -->
+29    <uses-permission
+29-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:23:5-24:51
+30        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+30-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:23:22-78
+31        android:maxSdkVersion="28" /> <!-- Scope this for older Android versions -->
+31-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:24:22-48
+32    <uses-permission
+32-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:25:5-26:51
+33        android:name="android.permission.READ_EXTERNAL_STORAGE"
+33-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:25:22-77
+34        android:maxSdkVersion="32" /> <!-- Scope if primarily using MediaStore for Android 13+ -->
+34-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:26:22-48
+35
+36    <uses-permission android:name="android.permission.INTERNET" />
+36-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:28:5-67
+36-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:28:22-64
+37    <uses-permission android:name="android.permission.SEND_SMS" />
+37-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:29:5-66
+37-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:29:22-64
+38    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+38-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:30:5-74
+38-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:30:22-72
+39
+40    <permission
+40-->[androidx.core:core:1.9.0] C:\Users\padan\.gradle\caches\transforms-4\766f3bb77a9602d5b18720e866ffb26d\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+41        android:name="com.example.sagar.vehicledocumentverification.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.9.0] C:\Users\padan\.gradle\caches\transforms-4\766f3bb77a9602d5b18720e866ffb26d\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.9.0] C:\Users\padan\.gradle\caches\transforms-4\766f3bb77a9602d5b18720e866ffb26d\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="com.example.sagar.vehicledocumentverification.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+44-->[androidx.core:core:1.9.0] C:\Users\padan\.gradle\caches\transforms-4\766f3bb77a9602d5b18720e866ffb26d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.9.0] C:\Users\padan\.gradle\caches\transforms-4\766f3bb77a9602d5b18720e866ffb26d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+45
+46    <application
+46-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:32:5-128:19
+47        android:allowBackup="true"
+47-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:33:13-39
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.9.0] C:\Users\padan\.gradle\caches\transforms-4\766f3bb77a9602d5b18720e866ffb26d\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+49        android:extractNativeLibs="true"
+50        android:icon="@drawable/scan"
+50-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:35:13-42
+51        android:label="@string/app_name"
+51-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:36:13-45
+52        android:requestLegacyExternalStorage="true"
+52-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:34:13-56
+53        android:roundIcon="@drawable/scan"
+53-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:37:13-47
+54        android:supportsRtl="true"
+54-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:38:13-39
+55        android:theme="@style/AppTheme"
+55-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:40:13-44
+56        android:usesCleartextTraffic="true" >
+56-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:39:13-48
+57
+58        <!--
+59            Note on android:usesCleartextTraffic="true":
+60            Be cautious with this setting as it allows unencrypted HTTP traffic.
+61            Prefer HTTPS for all network communications for better security.
+62        -->
+63
+64        <activity
+64-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:48:9-50:46
+65            android:name="com.example.sagar.vehicledocumentverification.Missing_bike_details"
+65-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:48:19-55
+66            android:exported="false"
+66-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:50:19-43
+67            android:label="MISSING BIKE" /> <!-- 2. Added exported="false" -->
+67-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:49:19-47
+68
+69        <activity
+69-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:52:9-54:46
+70            android:name="com.example.sagar.vehicledocumentverification.Missing_bike"
+70-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:52:19-47
+71            android:exported="false"
+71-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:54:19-43
+72            android:label="MISSING BIKE INFORMATION" /> <!-- 2. Added exported="false" -->
+72-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:53:19-59
+73
+74        <activity
+74-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:56:9-59:44
+75            android:name="com.example.sagar.vehicledocumentverification.Vehicle_information"
+75-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:57:17-52
+76            android:exported="false"
+76-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:59:17-41
+77            android:label="INFORMATION" /> <!-- 2. Added exported="false" -->
+77-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:58:17-44
+78
+79        <activity
+79-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:61:9-64:44
+80            android:name="com.example.sagar.vehicledocumentverification.Scan_code"
+80-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:62:17-42
+81            android:exported="false"
+81-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:64:17-41
+82            android:label="SCAN QR" /> <!-- 2. Added exported="false" -->
+82-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:63:17-40
+83
+84        <activity
+84-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:66:9-74:20
+85            android:name="com.example.sagar.vehicledocumentverification.Flash_page"
+85-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:67:17-43
+86            android:exported="true"
+86-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:69:17-40
+87            android:theme="@style/Theme.AppCompat.NoActionBar" > <!-- **3. CRITICAL FIX: Added android:exported="true" for LAUNCHER activity** -->
+87-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:68:17-67
+88            <intent-filter>
+88-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:70:13-73:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:71:17-69
+89-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:71:25-66
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:72:17-77
+91-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:72:27-74
+92            </intent-filter>
+93        </activity>
+94        <activity
+94-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:76:9-79:44
+95            android:name="com.example.sagar.vehicledocumentverification.About_app"
+95-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:77:17-42
+96            android:exported="false"
+96-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:79:17-41
+97            android:label="ABOUT APP" /> <!-- 2. Added exported="false" -->
+97-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:78:17-42
+98
+99        <activity
+99-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:81:9-84:44
+100            android:name="com.example.sagar.vehicledocumentverification.Create_account"
+100-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:82:17-47
+101            android:exported="false"
+101-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:84:17-41
+102            android:label="CREATE NEW ACCOUNT" /> <!-- 2. Added exported="false" -->
+102-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:83:17-51
+103
+104        <activity
+104-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:86:9-89:44
+105            android:name="com.example.sagar.vehicledocumentverification.Login_page"
+105-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:87:17-43
+106            android:exported="false"
+106-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:89:17-41
+107            android:label="LOGIN" /> <!-- 2. Added exported="false" -->
+107-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:88:17-38
+108
+109        <activity
+109-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:91:9-94:44
+110            android:name="com.example.sagar.vehicledocumentverification.MainActivity"
+110-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:92:17-45
+111            android:exported="false"
+111-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:94:17-41
+112            android:label="HOME" /> <!-- 2. Added exported="false" -->
+112-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:93:17-37
+113
+114        <meta-data
+114-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:96:9-98:43
+115            android:name="com.google.android.gms.vision.DEPENDENCIES"
+115-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:97:17-74
+116            android:value="barcode" />
+116-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:98:17-40
+117
+118        <!-- 4. Updated to AndroidX FileProvider -->
+119        <provider
+120            android:name="androidx.core.content.FileProvider"
+120-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:102:17-66
+121            android:authorities="com.example.sagar.vehicledocumentverification.provider"
+121-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:103:17-64
+122            android:exported="false"
+122-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:104:17-41
+123            android:grantUriPermissions="true" >
+123-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:105:17-51
+124
+125            <!-- The authorities attribute uses a placeholder that Gradle replaces -->
+126            <!-- The exported attribute is false, meaning other apps cannot access this provider directly -->
+127            <!-- grantUriPermissions is true to allow granting temporary access to URIs -->
+128            <meta-data
+128-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:109:13-111:62
+129                android:name="android.support.FILE_PROVIDER_PATHS"
+129-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:110:21-71
+130                android:resource="@xml/provider_paths" />
+130-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:111:21-59
+131            <!-- This meta-data points to an XML resource file (provider_paths.xml) -->
+132            <!-- that defines the paths this provider can share -->
+133        </provider>
+134
+135        <activity
+135-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:116:9-118:46
+136            android:name="com.example.sagar.vehicledocumentverification.Feedback"
+136-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:116:19-43
+137            android:exported="false"
+137-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:118:19-43
+138            android:label="FEEDBACK" /> <!-- 2. Added exported="false" -->
+138-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:117:19-43
+139
+140        <activity
+140-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:120:9-122:46
+141            android:name="com.example.sagar.vehicledocumentverification.Add_penalty"
+141-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:120:19-46
+142            android:exported="false"
+142-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:122:19-43
+143            android:label="ADD PENALTY" /> <!-- 2. Added exported="false" -->
+143-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:121:19-46
+144
+145        <activity
+145-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:124:9-126:46
+146            android:name="com.example.sagar.vehicledocumentverification.PrintfinalBillActivity"
+146-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:124:19-57
+147            android:exported="false"
+147-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:126:19-43
+148            android:label="Print Bill" /> <!-- 2. Added exported="false" -->
+148-->C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app\src\main\AndroidManifest.xml:125:19-45
+149
+150        <provider
+150-->[androidx.emoji2:emoji2:1.2.0] C:\Users\padan\.gradle\caches\transforms-4\9f5040fc5db5a39c950314988d59a270\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+151            android:name="androidx.startup.InitializationProvider"
+151-->[androidx.emoji2:emoji2:1.2.0] C:\Users\padan\.gradle\caches\transforms-4\9f5040fc5db5a39c950314988d59a270\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+152            android:authorities="com.example.sagar.vehicledocumentverification.androidx-startup"
+152-->[androidx.emoji2:emoji2:1.2.0] C:\Users\padan\.gradle\caches\transforms-4\9f5040fc5db5a39c950314988d59a270\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+153            android:exported="false" >
+153-->[androidx.emoji2:emoji2:1.2.0] C:\Users\padan\.gradle\caches\transforms-4\9f5040fc5db5a39c950314988d59a270\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+154            <meta-data
+154-->[androidx.emoji2:emoji2:1.2.0] C:\Users\padan\.gradle\caches\transforms-4\9f5040fc5db5a39c950314988d59a270\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+155                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+155-->[androidx.emoji2:emoji2:1.2.0] C:\Users\padan\.gradle\caches\transforms-4\9f5040fc5db5a39c950314988d59a270\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+156                android:value="androidx.startup" />
+156-->[androidx.emoji2:emoji2:1.2.0] C:\Users\padan\.gradle\caches\transforms-4\9f5040fc5db5a39c950314988d59a270\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+157            <meta-data
+157-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\padan\.gradle\caches\transforms-4\1e452b8432f12143c1878f66b6a35a22\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+158                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+158-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\padan\.gradle\caches\transforms-4\1e452b8432f12143c1878f66b6a35a22\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+159                android:value="androidx.startup" />
+159-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\padan\.gradle\caches\transforms-4\1e452b8432f12143c1878f66b6a35a22\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+160            <meta-data
+160-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+161                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+162                android:value="androidx.startup" />
+162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+163        </provider>
+164
+165        <activity
+165-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\padan\.gradle\caches\transforms-4\d3ea31d64d3ceb2b0488f381eb7a02c4\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
+166            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+166-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\padan\.gradle\caches\transforms-4\d3ea31d64d3ceb2b0488f381eb7a02c4\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
+167            android:exported="false"
+167-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\padan\.gradle\caches\transforms-4\d3ea31d64d3ceb2b0488f381eb7a02c4\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
+168            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+168-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\padan\.gradle\caches\transforms-4\d3ea31d64d3ceb2b0488f381eb7a02c4\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
+169
+170        <meta-data
+170-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\padan\.gradle\caches\transforms-4\9251adb7de45ca53f8e65df1b4d7a073\transformed\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
+171            android:name="com.google.android.gms.version"
+171-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\padan\.gradle\caches\transforms-4\9251adb7de45ca53f8e65df1b4d7a073\transformed\jetified-play-services-basement-17.4.0\AndroidManifest.xml:24:13-58
+172            android:value="@integer/google_play_services_version" />
+172-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\padan\.gradle\caches\transforms-4\9251adb7de45ca53f8e65df1b4d7a073\transformed\jetified-play-services-basement-17.4.0\AndroidManifest.xml:25:13-66
+173
+174        <receiver
+174-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+175            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+176            android:directBootAware="false"
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+177            android:enabled="true"
+177-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+178            android:exported="true"
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+179            android:permission="android.permission.DUMP" >
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+180            <intent-filter>
+180-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+181                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+182            </intent-filter>
+183            <intent-filter>
+183-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+184                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+185            </intent-filter>
+186            <intent-filter>
+186-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+187                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+188            </intent-filter>
+189            <intent-filter>
+189-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+190                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\padan\.gradle\caches\transforms-4\4c6ba32b5dd62e494818b1cdad964274\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+191            </intent-filter>
+192        </receiver>
+193    </application>
+194
+195</manifest>

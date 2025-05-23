@@ -1,0 +1,20 @@
+<lint-module
+    format="1"
+    dir="C:\Users\padan\OneDrive\Desktop\VehicleDocumentVerification\app"
+    name=":app"
+    type="APP"
+    maven="VehicleDocumentVerification:app:unspecified"
+    agpVersion="8.4.0"
+    buildFolder="build"
+    bootClassPath="C:\Users\padan\Documents\platforms\android-34\android.jar;C:\Users\padan\Documents\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      baselineFile="lint-baseline.xml"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

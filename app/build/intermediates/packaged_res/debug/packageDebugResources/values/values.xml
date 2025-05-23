@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#2980b9</color>
+    <color name="colorPrimary">#2980b9</color>
+    <color name="colorPrimaryDark">#2980b9</color>
+    <color name="some_color">#F00D26</color>
+    <string name="app_name">QR-VDV</string>
+    <string name="create_new">Click here for register</string>
+    <string name="email_error">Please enter a email address</string>
+    <string name="error_invalid_email">Email is not valid</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+    <string name="login">Log In</string>
+    <string name="name">Name</string>
+    <string name="name_error">Please enter your name</string>
+    <string name="not_register">Not Register?</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="phone_error">Please enter a phone number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="register">Register</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

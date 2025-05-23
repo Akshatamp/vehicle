@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD PENALTY FEE"
+                />
+
+
+
+            <EditText
+                android:layout_marginTop="20dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Penalty Details "
+                android:id="@+id/et_pdetails"
+
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Enter Amount"
+                android:id="@+id/et_amount"
+                android:inputType="numberDecimal"
+
+                />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Enter Mobile Number"
+                android:id="@+id/et_mno"
+                android:inputType="numberDecimal"
+
+                />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Enter User Name"
+                android:id="@+id/et_uname"
+
+
+                />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Enter Address"
+                android:id="@+id/et_address"
+
+
+
+                />
+
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="SUBMIT"
+                android:layout_margin="10dp"
+                android:id="@+id/btn_sub"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimaryDark"
+                />
+
+
+
+
+            <RelativeLayout
+                android:background="@drawable/scan"
+
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
